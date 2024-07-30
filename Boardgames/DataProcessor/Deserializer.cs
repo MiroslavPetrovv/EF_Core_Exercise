@@ -21,34 +21,57 @@
         public static string ImportCreators(BoardgamesContext context, string xmlString)
         {
             StringBuilder sb = new StringBuilder();
-            XmlHelper xmlHelper = new XmlHelper();
-            const string root = "Creators";
+XmlHelper xmlHelper = new XmlHelper();
+const string root = "Creators";
 
-            ICollection<Creator> creators = new List<Creator>();
-            ImportCreatorDto[] deserializeCreators =
-                xmlHelper.Deserialize<ImportCreatorDto[]>(xmlString, root);
+ICollection<Creator> creators = new List<Creator>();
+ImportCreatorDto[] deserializeCreators =
+    xmlHelper.Deserialize<ImportCreatorDto[]>(xmlString, root);
 
-            foreach (ImportCreatorDto creatorDto in deserializeCreators)
-            {
-              
+foreach (ImportCreatorDto creatorDto in deserializeCreators)
+{
+  
 
-                if (!IsValid(creatorDto))
-                {
-                    sb.AppendLine(ErrorMessage);
-                    continue;
-                }
-                foreach (BoardgameDto b in creatorDto.Boardgames)
-                {
-                    if (!IsValid(b))
-                    {
-                        sb.AppendLine(ErrorMessage);
-                        continue;
-                    }
-                }
-                
-            }
+    if (!IsValid(creatorDto))
+    {
+        sb.AppendLine(ErrorMessage);
+        continue;
+    }
+        ICollection<Boardgame> boardgamesToImport = new List<Boardgame>();
+        foreach (BoardgameDto b in creatorDto.Boardgames)
+    {
+        if (!IsValid(b))
+        {
+            sb.AppendLine(ErrorMessage);
+            continue;
+        }
 
-            return sb.ToString();
+        Boardgame boardgame = new Boardgame()
+        {
+            Name = b.Name,
+            Rating = b.Rating,
+            YearPublished = b.YearPublished,
+            CategoryType = (CategoryType)b.CategoryType,
+            Mechanics = b.Mechanics
+        };
+        boardgamesToImport.Add(boardgame);
+    }
+        Creator creator = new Creator()
+        {
+            FirstName = creatorDto.FirstName,
+            LastName = creatorDto.LastName,
+            Boardgames = boardgamesToImport
+        };
+
+    creators.Add(creator);
+    sb.AppendLine(string.Format(SuccessfullyImportedCreator,
+        creatorDto.FirstName,creatorDto.LastName,creator.Boardgames.Count()));
+    //apendLine
+}
+context.Creators.AddRange(creators);
+context.SaveChanges();
+
+return sb.ToString();
 
         }
 
