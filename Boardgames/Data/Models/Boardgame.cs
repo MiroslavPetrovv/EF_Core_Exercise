@@ -12,6 +12,7 @@ namespace Boardgames.Data.Models
     using static DataConstraints;
     public class Boardgame
     {
+        //change
         [Key]
         public int Id { get; set; }
 
