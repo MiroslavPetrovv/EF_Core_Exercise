@@ -14,7 +14,7 @@ namespace Boardgames.Data
         public const byte CreatorLastNameMaxLength = 7;
         public const byte CreatorLastNameMinLength = 2;
 
-        //BoardGame
+        //Boardgame
         public const byte BoardGameNameMaxLength = 20;
         public const byte BoardGameNameMinLength = 10;
         public const double BoardGameRatingMaxValue = 10.00;
