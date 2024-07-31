@@ -77,7 +77,52 @@ return sb.ToString();
 
         public static string ImportSellers(BoardgamesContext context, string jsonString)
         {
-            return "";
+            StringBuilder sb = new StringBuilder();
+ICollection<Seller> sellersToImport = new List<Seller>();
+ImportSellerDto[] importSellertDto =
+    JsonConvert.DeserializeObject<ImportSellerDto[]>(jsonString)!;
+foreach (ImportSellerDto sellerDto in importSellertDto)
+{
+    if (!IsValid(sellerDto))
+    {
+        sb.AppendLine(ErrorMessage);
+        continue;
+    }
+    Seller seller = new Seller()
+    {
+        Name = sellerDto.Name,
+        Address = sellerDto.Address,
+        Country = sellerDto.Country,
+        Website = sellerDto.Website,
+
+    };
+    ICollection<BoardgameSeller> boardgamesToImport = new List<BoardgameSeller>();
+    foreach(int boardgameId in sellerDto.Boardgames.Distinct())
+    {
+        if (!context.Boardgames.Any(b=> b.Id==boardgameId))
+        {
+            sb.AppendLine(ErrorMessage);
+            continue;
+        }
+        BoardgameSeller boardgame = new BoardgameSeller()
+        {
+            Seller =seller,
+            BoardgameId = boardgameId
+
+        };
+        boardgamesToImport.Add(boardgame);
+    }
+    seller.BoardgamesSellers = boardgamesToImport;
+
+    sellersToImport.Add(seller);
+    sb.AppendLine(string.Format(SuccessfullyImportedSeller, seller.Name, seller.BoardgamesSellers.Count()));
+
+   
+}
+context.Sellers.AddRange(sellersToImport);
+context.SaveChanges();
+
+return sb.ToString();
         }
 
         private static bool IsValid(object dto)
