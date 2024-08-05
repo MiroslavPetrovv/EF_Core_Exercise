@@ -53,7 +53,45 @@ namespace TravelAgency.DataProcessor
 
         public static string ImportBookings(TravelAgencyContext context, string jsonString)
         {
-            throw new NotImplementedException();
+            StringBuilder sb = new StringBuilder();
+ ICollection<Booking> bookings = new List<Booking>();
+ ImportBookingDto[] importBookingDtos = 
+     JsonConvert.DeserializeObject<ImportBookingDto[]>(jsonString);
+ foreach (ImportBookingDto bookingDto in importBookingDtos)
+ {
+     if (!IsValid(bookingDto))
+     {
+         sb.AppendLine(ErrorMessage);
+         continue;
+     }
+     DateTime bookingDate;
+     if (!DateTime.TryParseExact(bookingDto.BookingDate,
+         "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out bookingDate))
+     {
+         sb.AppendLine(ErrorMessage);
+         continue;
+     }
+     int customerId = context.Customers.FirstOrDefault(c => c.FullName == bookingDto.CustomerName).Id;
+     int tourPackageId = context.TourPackages.FirstOrDefault(
+            tp => tp.PackageName == bookingDto.TourPackageName).Id;
+     if (customerId ==0 || tourPackageId ==0 )
+     {
+         sb.AppendLine(ErrorMessage);
+         continue;
+     }
+     Booking booking = new Booking()
+     {
+         CustomerId = customerId,
+         TourPackageId = tourPackageId,
+         BookingDate = bookingDate,
+     };
+     bookings.Add(booking);
+     sb.AppendLine(string.Format(SuccessfullyImportedBooking,bookingDto.TourPackageName,
+         bookingDto.BookingDate));
+ }
+ context.Bookings.AddRange(bookings);
+ context.SaveChanges();
+ return sb.ToString().TrimEnd();
         }
 
         public static bool IsValid(object dto)
