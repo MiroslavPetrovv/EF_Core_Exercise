@@ -14,6 +14,8 @@ namespace TravelAgency.Data.Models
         [Required]
         [MaxLength(DescriptionMaxLength)]
         public string? Description { get; set; }
+        [Required]
+        public decimal Price {get; set;}
 
         public virtual ICollection<Booking> Bookings { get; set; } = new List<Booking>();
 
