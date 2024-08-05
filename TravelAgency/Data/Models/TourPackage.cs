@@ -1,4 +1,4 @@
-﻿namespace TravelAgency.Data.Models
+namespace TravelAgency.Data.Models
 {
     using System.ComponentModel.DataAnnotations;
     using static DataConstraits;
@@ -13,6 +13,10 @@
 
         [Required]
         [MaxLength(DescriptionMaxLength)]
-        public string Description { get; set; }
+        public string? Description { get; set; }
+
+        public virtual ICollection<Booking> Bookings { get; set; } = new List<Booking>();
+
+        public virtual ICollection<TourPackageGuide> TourPackagesGuides { get; set; } = new List<TourPackageGuide>();
     }
 }
