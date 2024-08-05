@@ -12,7 +12,43 @@ namespace TravelAgency.DataProcessor
 
         public static string ImportCustomers(TravelAgencyContext context, string xmlString)
         {
-            throw new NotImplementedException();
+           StringBuilder sb = new StringBuilder();
+
+            XmlHelper xmlHelper = new XmlHelper();
+            const string XmlRoot = "Customers";
+
+            ICollection<Customer> customersToImport = new List<Customer>();
+            ImportCustomerDto[] CustomerDtos =
+            xmlHelper.Deserialize<ImportCustomerDto[]>(xmlString, XmlRoot);
+            foreach (ImportCustomerDto customerDto in CustomerDtos )
+                {
+                    if (!IsValid(customerDto))
+                    {
+                        sb.AppendLine(ErrorMessage);
+                        continue;
+                    }
+                        bool customerExists = customersToImport.Any(c =>
+                           c.FullName == customerDto.FullName ||
+                           c.Email == customerDto.Email ||
+                           c.PhoneNumber == customerDto.PhoneNumber);
+
+                    if (customerExists )
+                        {
+                            sb.AppendLine(DuplicationDataMessage);
+                            continue;
+                        }
+                     Customer newCustomer = new Customer()
+                    {
+                        FullName = customerDto.FullName,
+                        Email = customerDto.Email,
+                        PhoneNumber = customerDto.PhoneNumber,
+                     };
+                    customersToImport.Add(newCustomer);
+                    sb.AppendLine(string.Format(SuccessfullyImportedCustomer, customerDto.FullName));
+            }
+            context.Customers.AddRange(customersToImport);
+            context.SaveChanges();
+            return sb.ToString().TrimEnd();
         }
 
         public static string ImportBookings(TravelAgencyContext context, string jsonString)
