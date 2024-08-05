@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -26,6 +26,6 @@ namespace TravelAgency.Data.Models
         //RegularExpression
         public string PhoneNumber { get; set; } = null!;
 
-        //Collection of Books
+        public virtual ICollection<Booking> Bookings { get; set; } = new List<Booking>();
     }
 }
