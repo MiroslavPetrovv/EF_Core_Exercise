@@ -11,7 +11,7 @@ namespace Boardgames.Data.Models
 {
     public class BoardgameSeller
     {
-        [Required]
+        
         public int BoardgameId { get; set; }
 
         [ForeignKey(nameof(BoardgameId))]
