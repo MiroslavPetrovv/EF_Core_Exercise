@@ -9,6 +9,6 @@ namespace TravelAgency.Data
     public  class Configurator
     {
         public static string ConnectionString = 
-            @"Server=.;Database=Boardgames;Integrated Security=True;Encrypt=False";
+            @"Server=.;Database=TravelAgency;Integrated Security=True;Encrypt=False";
     }
 }
