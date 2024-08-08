@@ -22,7 +22,7 @@ namespace Boardgames.DataProcessor.ImportDto
         [XmlElement(nameof(Rating))]
         [Range(BoardGameRatingMinValue,BoardGameRatingMaxValue)]
         [Required]
-        public decimal Rating { get; set; }
+        public double Rating { get; set; }
 
         [XmlElement(nameof(YearPublished))]
         [Range(BoardGameYearPublishedMinValue,BoardGameYearPublishedMaxValue)]
