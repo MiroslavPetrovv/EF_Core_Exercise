@@ -1,0 +1,150 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Miroslav\\source\\repos\\SoftUni EntityFramework\\FootballBookmakerSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{838B251A-72D7-45DC-9F3A-B6F857DB2466}|P02_FootballBetting.csproj|c:\\users\\miroslav\\source\\repos\\softuni entityframework\\footballbookmakersystem\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{838B251A-72D7-45DC-9F3A-B6F857DB2466}|P02_FootballBetting.csproj|solutionrelative:startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{838B251A-72D7-45DC-9F3A-B6F857DB2466}|P02_FootballBetting.csproj|c:\\users\\miroslav\\source\\repos\\softuni entityframework\\footballbookmakersystem\\data\\footballbettingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{838B251A-72D7-45DC-9F3A-B6F857DB2466}|P02_FootballBetting.csproj|solutionrelative:data\\footballbettingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{838B251A-72D7-45DC-9F3A-B6F857DB2466}|P02_FootballBetting.csproj|c:\\users\\miroslav\\source\\repos\\softuni entityframework\\footballbookmakersystem\\data\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{838B251A-72D7-45DC-9F3A-B6F857DB2466}|P02_FootballBetting.csproj|solutionrelative:data\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{838B251A-72D7-45DC-9F3A-B6F857DB2466}|P02_FootballBetting.csproj|c:\\users\\miroslav\\source\\repos\\softuni entityframework\\footballbookmakersystem\\data\\models\\playerstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{838B251A-72D7-45DC-9F3A-B6F857DB2466}|P02_FootballBetting.csproj|solutionrelative:data\\models\\playerstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{838B251A-72D7-45DC-9F3A-B6F857DB2466}|P02_FootballBetting.csproj|c:\\users\\miroslav\\source\\repos\\softuni entityframework\\footballbookmakersystem\\data\\models\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{838B251A-72D7-45DC-9F3A-B6F857DB2466}|P02_FootballBetting.csproj|solutionrelative:data\\models\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{838B251A-72D7-45DC-9F3A-B6F857DB2466}|P02_FootballBetting.csproj|c:\\users\\miroslav\\source\\repos\\softuni entityframework\\footballbookmakersystem\\data\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{838B251A-72D7-45DC-9F3A-B6F857DB2466}|P02_FootballBetting.csproj|solutionrelative:data\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{838B251A-72D7-45DC-9F3A-B6F857DB2466}|P02_FootballBetting.csproj|c:\\users\\miroslav\\source\\repos\\softuni entityframework\\footballbookmakersystem\\data\\models\\color.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{838B251A-72D7-45DC-9F3A-B6F857DB2466}|P02_FootballBetting.csproj|solutionrelative:data\\models\\color.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{838B251A-72D7-45DC-9F3A-B6F857DB2466}|P02_FootballBetting.csproj|c:\\users\\miroslav\\source\\repos\\softuni entityframework\\footballbookmakersystem\\data\\models\\bet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{838B251A-72D7-45DC-9F3A-B6F857DB2466}|P02_FootballBetting.csproj|solutionrelative:data\\models\\bet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\Miroslav\\source\\repos\\SoftUni EntityFramework\\FootballBookmakerSystem\\Data\\Models\\Player.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\Player.cs",
+              "ToolTip": "C:\\Users\\Miroslav\\source\\repos\\SoftUni EntityFramework\\FootballBookmakerSystem\\Data\\Models\\Player.cs",
+              "RelativeToolTip": "Data\\Models\\Player.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACAAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T09:41:41.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerStatistics.cs",
+              "DocumentMoniker": "C:\\Users\\Miroslav\\source\\repos\\SoftUni EntityFramework\\FootballBookmakerSystem\\Data\\Models\\PlayerStatistics.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\PlayerStatistics.cs",
+              "ToolTip": "C:\\Users\\Miroslav\\source\\repos\\SoftUni EntityFramework\\FootballBookmakerSystem\\Data\\Models\\PlayerStatistics.cs",
+              "RelativeToolTip": "Data\\Models\\PlayerStatistics.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T09:41:41.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Position.cs",
+              "DocumentMoniker": "C:\\Users\\Miroslav\\source\\repos\\SoftUni EntityFramework\\FootballBookmakerSystem\\Data\\Models\\Position.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\Position.cs",
+              "ToolTip": "C:\\Users\\Miroslav\\source\\repos\\SoftUni EntityFramework\\FootballBookmakerSystem\\Data\\Models\\Position.cs",
+              "RelativeToolTip": "Data\\Models\\Position.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T09:41:40.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Team.cs",
+              "DocumentMoniker": "C:\\Users\\Miroslav\\source\\repos\\SoftUni EntityFramework\\FootballBookmakerSystem\\Data\\Models\\Team.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\Team.cs",
+              "ToolTip": "C:\\Users\\Miroslav\\source\\repos\\SoftUni EntityFramework\\FootballBookmakerSystem\\Data\\Models\\Team.cs",
+              "RelativeToolTip": "Data\\Models\\Team.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAwwC0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T08:35:52.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FootballBettingContext.cs",
+              "DocumentMoniker": "C:\\Users\\Miroslav\\source\\repos\\SoftUni EntityFramework\\FootballBookmakerSystem\\Data\\FootballBettingContext.cs",
+              "RelativeDocumentMoniker": "Data\\FootballBettingContext.cs",
+              "ToolTip": "C:\\Users\\Miroslav\\source\\repos\\SoftUni EntityFramework\\FootballBookmakerSystem\\Data\\FootballBettingContext.cs",
+              "RelativeToolTip": "Data\\FootballBettingContext.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwDgAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T04:29:29.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Bet.cs",
+              "DocumentMoniker": "C:\\Users\\Miroslav\\source\\repos\\SoftUni EntityFramework\\FootballBookmakerSystem\\Data\\Models\\Bet.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\Bet.cs",
+              "ToolTip": "C:\\Users\\Miroslav\\source\\repos\\SoftUni EntityFramework\\FootballBookmakerSystem\\Data\\Models\\Bet.cs",
+              "RelativeToolTip": "Data\\Models\\Bet.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T04:28:03.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Color.cs",
+              "DocumentMoniker": "C:\\Users\\Miroslav\\source\\repos\\SoftUni EntityFramework\\FootballBookmakerSystem\\Data\\Models\\Color.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\Color.cs",
+              "ToolTip": "C:\\Users\\Miroslav\\source\\repos\\SoftUni EntityFramework\\FootballBookmakerSystem\\Data\\Models\\Color.cs",
+              "RelativeToolTip": "Data\\Models\\Color.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T04:28:02.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StartUp.cs",
+              "DocumentMoniker": "C:\\Users\\Miroslav\\source\\repos\\SoftUni EntityFramework\\FootballBookmakerSystem\\StartUp.cs",
+              "RelativeDocumentMoniker": "StartUp.cs",
+              "ToolTip": "C:\\Users\\Miroslav\\source\\repos\\SoftUni EntityFramework\\FootballBookmakerSystem\\StartUp.cs",
+              "RelativeToolTip": "StartUp.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T09:35:15.009Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

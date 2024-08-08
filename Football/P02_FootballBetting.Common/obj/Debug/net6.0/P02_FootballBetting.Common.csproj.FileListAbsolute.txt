@@ -1,0 +1,14 @@
+C:\Users\Miroslav\source\repos\P02_FootballBetting.Common\bin\Debug\net6.0\P02_FootballBetting.Common.exe
+C:\Users\Miroslav\source\repos\P02_FootballBetting.Common\bin\Debug\net6.0\P02_FootballBetting.Common.deps.json
+C:\Users\Miroslav\source\repos\P02_FootballBetting.Common\bin\Debug\net6.0\P02_FootballBetting.Common.runtimeconfig.json
+C:\Users\Miroslav\source\repos\P02_FootballBetting.Common\bin\Debug\net6.0\P02_FootballBetting.Common.dll
+C:\Users\Miroslav\source\repos\P02_FootballBetting.Common\bin\Debug\net6.0\P02_FootballBetting.Common.pdb
+C:\Users\Miroslav\source\repos\P02_FootballBetting.Common\obj\Debug\net6.0\P02_FootballBetting.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Miroslav\source\repos\P02_FootballBetting.Common\obj\Debug\net6.0\P02_FootballBetting.Common.AssemblyInfoInputs.cache
+C:\Users\Miroslav\source\repos\P02_FootballBetting.Common\obj\Debug\net6.0\P02_FootballBetting.Common.AssemblyInfo.cs
+C:\Users\Miroslav\source\repos\P02_FootballBetting.Common\obj\Debug\net6.0\P02_FootballBetting.Common.csproj.CoreCompileInputs.cache
+C:\Users\Miroslav\source\repos\P02_FootballBetting.Common\obj\Debug\net6.0\P02_FootballBetting.Common.dll
+C:\Users\Miroslav\source\repos\P02_FootballBetting.Common\obj\Debug\net6.0\refint\P02_FootballBetting.Common.dll
+C:\Users\Miroslav\source\repos\P02_FootballBetting.Common\obj\Debug\net6.0\P02_FootballBetting.Common.pdb
+C:\Users\Miroslav\source\repos\P02_FootballBetting.Common\obj\Debug\net6.0\P02_FootballBetting.Common.genruntimeconfig.cache
+C:\Users\Miroslav\source\repos\P02_FootballBetting.Common\obj\Debug\net6.0\ref\P02_FootballBetting.Common.dll
